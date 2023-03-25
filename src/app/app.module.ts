@@ -9,6 +9,8 @@ import { ContentComponent } from './components/content/content.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StudentsComponent } from './components/students/students.component';
+import { LoginComponent } from './components/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { StudentsComponent } from './components/students/students.component';
     ToolbarComponent,
     ContentComponent,
     StudentsComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
