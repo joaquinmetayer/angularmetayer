@@ -8,13 +8,15 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ContentComponent } from './components/content/content.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StudentsComponent } from './components/students/students.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ToolbarComponent,
-    ContentComponent
+    ContentComponent,
+    StudentsComponent,
   ],
   imports: [
     BrowserModule,
