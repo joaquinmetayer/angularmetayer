@@ -1,38 +1,37 @@
 <div class="container-fluid">
     <div class="row">
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h3">Please sign in</h1>
-        </div>
-        <div>
-            <form [formGroup]="form" (ngSubmit)="save()">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="user">
-                  <label for="floatingInput">Username</label>
-                  <div *ngIf="form.get('user')?.hasError('required')" class="invalid-feedback" style="display: block; color: red;">
-                    The username is required.
-                  </div>
-                  <div *ngIf="form.get('user')?.hasError('minlength')" class="invalid-feedback" style="display: block; color: red;">
-                    The username must have at least 3 characters.
-                  </div>
-                  <div *ngIf="form.get('user')?.hasError('maxlength')" class="invalid-feedback" style="display: block; color: red;">
-                    The username must not be longer than 20 characters.
-                  </div>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password">
-                  <label for="floatingPassword">Password</label>
-                  <div *ngIf="form.get('password')?.hasError('required')" class="invalid-feedback" style="display: block; color: red;">
-                    The password is required.
-                  </div>
-                  <div *ngIf="form?.get('password')?.hasError('minlength')" class="invalid-feedback" style="display: block; color: red;">
-                    The password must have at least 8 characters.
-                  </div>
-                </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit" [disabled]="form.invalid">Sign in</button>
-              </form>
-        </div>
-      </main>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1 class="h3">Please sign in</h1>
+            </div>
+            <div>
+                <form [formGroup]="form" (ngSubmit)="save()">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="username" formControlName="user">
+                      <label for="floatingInput">Username</label>
+                      <div *ngIf="form.get('user')?.hasError('required')" class="invalid-feedback">
+                        The username is required.
+                      </div>
+                      <div *ngIf="form.get('user')?.hasError('minlength')" class="invalid-feedback">
+                        The username must have at least 3 characters.
+                      </div>
+                      <div *ngIf="form.get('user')?.hasError('maxlength')" class="invalid-feedback">
+                        The username must not be longer than 20 characters.
+                      </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password">
+                      <label for="floatingPassword">Password</label>
+                      <div *ngIf="form.get('password')?.hasError('required')" class="invalid-feedback">
+                        The password is required.
+                      </div>
+                      <div *ngIf="form?.get('password')?.hasError('minlength')" class="invalid-feedback">
+                        The password must have at least 8 characters.
+                      </div>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit" [disabled]="form.invalid">Sign in</button>
+                </form>
+            </div>
+        </main>
     </div>
-  </div>
-  
+</div>

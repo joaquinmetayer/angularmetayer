@@ -4,13 +4,11 @@ import { StudentsComponent } from './components/students/students.component';
 import { ContentComponent } from './components/content/content.component';
 import { LoginComponent } from './components/login/login.component';
 
-
 const routes: Routes = [
-  { path: '', component: ContentComponent },
+  { path: '', component: LoginComponent },
   { path: 'book', component: ContentComponent },
   { path: 'students', component: StudentsComponent },
   { path: 'login', component: LoginComponent },
-
 ];
 
 @NgModule({

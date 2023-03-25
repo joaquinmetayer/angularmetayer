@@ -10,8 +10,7 @@ export class LoginComponent implements OnInit {
   form: FormGroup = this.fb.group({
     user: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
     password: ['', [Validators.required, Validators.minLength(8)]]
-  });
-  
+  });  
 
   constructor(private fb: FormBuilder) { }
 
