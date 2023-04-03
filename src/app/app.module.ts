@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StudentsComponent } from './components/students/students.component';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from './modules/material/material.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     NgbModule,
     ReactiveFormsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
